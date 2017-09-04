@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            #FirstName, #LastName, #Email, #Reason, #AdditionalInformation{
+                width: 225px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table cellpadding="10">
+                <tr>
+                    <td align="right">
+                        <label id="FirstNameLabel" for "FirstName">First Name:</label>
+                    </td>
+                    <td align="right"td>
+                        <input id="FirstName" name="FirstName" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label id="LastNameLabel" for "LastName">Last Name:</label>
+                    </td>
+                    <td align="right">
+                        <input id="LastName" name="LastName" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label id=EmailLabel" for "Email">Email:</label>
+                    </td>
+                    <td align="right">
+                        <input id="Email" name="Email" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label id="TypeOfLicenseLabel" for "TypeOfLicense">Type of License:</label>
+                    </td>
+                    <td>
+                        <input id="TypeOfLicenseBusiness" name="TypeOfLicense" value="Business" type="radio" checked />Business
+                        <input id="TypeOflicensePersonal" name="TypeOfLicense" value="Personal" type="radio" />Personal
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"td>
+                        <label id="ReasonLabel" for "Reason">Reason:</label>
+                    </td>
+                    <td align="right">
+                        <select id="Reason" name="Reason">
+                            <option value="SelectAReason">Select a Reason</option>
+                            <option value="SoftwareSupport">Software Support</option>
+                            <option value="HardwareSupport">Hardware Support</option>
+                            <option value="InformationSupport">Information Support</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"td>
+                        <label id="AdditionalInformationLabel" for "AdditionalInformation">Additional Information:</label>
+                    </td>
+                    <td align="right">
+                        <textarea id="AdditionalInformation" name="AdditionalInformation" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input id="ReadTOS" name="ReadTOS" value="Yes" type="checkbox" />
+                        I have read the terms of service.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="right">
+                        <input id="Submit" type="submit" value="Send Request" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
