@@ -1,0 +1,12 @@
+div {
+    text-align: center;
+}
+
+table   {
+    margin: auto;
+    width: 70%;
+}
+
+a:hover {
+    text-decoration-color: yellow;
+}
