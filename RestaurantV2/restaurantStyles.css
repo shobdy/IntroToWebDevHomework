@@ -1,0 +1,13 @@
+/* This stylesheet holds the styles for th header and footer only, per the directions on Restaurant V2 */
+
+header h1, footer  {
+    text-align: center;
+}
+
+nav{
+    padding: 10px 0px;
+}
+
+nav a {
+    padding: 20px;
+}

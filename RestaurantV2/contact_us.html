@@ -3,12 +3,6 @@
     <head>
         <title>Home Page</title>
         <style>
-            nav{
-                padding: 10px 0px;
-            }
-            nav a {
-                padding: 20px;
-            }
             table   {
                 width: 425px;
                 margin-left: 400px; 
@@ -26,11 +20,16 @@
            #bestTimeToContact input  {
                margin-right: 8px;
            }
+
+           .alignRight  {
+               text-align:right;
+           }
         </style>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <header>
-            <h1 align="center">Joe's Diner</h1>
+            <h1>Joe's Diner</h1>
             <hr>
             <nav>
                 <a href="index.html">Home</a>
@@ -43,19 +42,19 @@
               <form action="#" method="post">
                   <table>
                       <tr>
-                          <td align="right"><label id="nameLabel" for="name">Name:</label></td>
+                          <td class="alignRight"td><label id="nameLabel" for="name">Name:</label></td>
                           <td><input id="name" name="name" type="text" /></td>
                       </tr>
                       <tr>
-                          <td align="right"><label id="emailLabel" for="email">Email:</label></td>
+                          <td class="alignRight"><label id="emailLabel" for="email">Email:</label></td>
                           <td><input id="email" name="email" type="text" /></td>
                       </tr>
                       <tr>
-                          <td align="right"><label id="phoneLabel" for="phone">Phone:</label></td>
+                          <td class="alignRight"><label id="phoneLabel" for="phone">Phone:</label></td>
                           <td><input id="phone" name="phone" type="text" /></td>
                       </tr>
                       <tr>
-                          <td align="right"><label id="reasonLabel" for="reason">Reason for Inquiry:</label></td>
+                          <td class="alignRight"><label id="reasonLabel" for="reason">Reason for Inquiry:</label></td>
                           <td><select id="reason" name="reason">
                                 <option value="catering" checked>Catering</option>
                                 <option value="privateParty">Private Party</option>
@@ -64,15 +63,15 @@
                               </select>
                       </tr>
                       <tr>
-                          <td align="right" style="vertical-align: top;"><label id="additionalInfoLabel" for="additionalInfo">Additional Information:</label></td>
+                          <td class="alignRight" style="vertical-align: top;"><label id="additionalInfoLabel" for="additionalInfo">Additional Information:</label></td>
                           <td><textarea id="additionalInfo" name="additionalInfo"></textarea></td>
                       </tr>
                       <tr>
-                          <td align="right"><label id="visitBeforeLabel" for="visitBefore">Have you been to the restaurant?</label></td>
+                          <td class="alignRight"><label id="visitBeforeLabel" for="visitBefore">Have you been to the restaurant?</label></td>
                           <td><input name="visitBefore" value="No" type="radio" checked/>No <input name="visitBefore" value="Yes" type="radio" />Yes</td>
                       </tr>
                       <tr>
-                          <td align="right"><label id="bestTimeToContactLabel" for="bestTimeToContact">Best days to contact you:</label></td>
+                          <td class="alignRight"><label id="bestTimeToContactLabel" for="bestTimeToContact">Best days to contact you:</label></td>
                           <td id="bestTimeToContact"><input name="bestTimeToContact" type="checkbox" value="Monday">M
                             <input name="bestTimeToContact" type="checkbox" value="Tuesday">T
                             <input name="bestTimeToContact" type="checkbox" value="Wednesday">W
@@ -81,13 +80,13 @@
                       </tr>
                       <tr>
                           <td></td>
-                          <td align="right"><input id="SendRequest" name="SendRequest" type="submit" value="Send Request" /></td>
+                          <td class="alignRight"><input id="SendRequest" name="SendRequest" type="submit" value="Send Request" /></td>
                       </tr>
                   </table>
               </form>
             </main>
             <hr>
-            <footer align="center">
+            <footer>
                 <address>123 Main St., Beaver Dam, KY 42320</address>
                 <p>270-555-1234</p>
             </footer>
