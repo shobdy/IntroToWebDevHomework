@@ -1,0 +1,21 @@
+div {
+    text-align: center;
+}
+
+table   {
+    margin: auto;
+    width: 70%;
+}
+
+a   {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: #ccc;
+}
+
+tbody   {
+    font-style: italic;
+    background-color: ivory;
+}
