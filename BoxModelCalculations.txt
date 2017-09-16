@@ -1,0 +1,20 @@
+In this exercise, you will apply the equations for calculating heights and widths as discussed in the Box Model lesson.
+
+The sample element you are working with is:
+
+#div1 {
+	height: 150px;
+	width: 400px;
+	margin: 20px;
+	border: 1px solid red;
+	padding: 10px;
+}
+
+For this object, calculate:
+
+Total height: 20 (top margin) + 1 (top border) + 10 (top padding) + 150 (content height) + 10 (bottom padding) + 1 (bottom border) + 20 (bottom margin) = 212px
+Total width: 20 (left margin) + 1 (left border) + 10 (left padding) + 400 (content width) + 10 (right padding) + 1 (right border) + 20 (right margin) = 462px
+Browser calculated height: 1 (top border) + 10 (top padding) + 150 (content height) + 10 (bottom padding) + 1 (bottom border) = 172px
+Browser calculated width: 1 (left border) + 10 (left padding) + 400 (content width) + 10 (right padding) + 1 (right border) = 422px
+
+Save your answers in a file named BoxModelCalculations.txt and be sure to show your work as to how you arrived at the answers.
