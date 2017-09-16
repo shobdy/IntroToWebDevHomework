@@ -16,10 +16,10 @@ h1  {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#menu tr th  {
+.menu tr th  {
     font-size: 1.5em;
 }
-#menu   {
+.menu   {
     background-color: #ddd;
 }
 
@@ -29,4 +29,27 @@ h1  {
 
 #nameLabel, #emailLabel, #reasonLabel   {
     font-weight: bold;
+}
+
+a:visited   {
+    color: green;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active    {
+    text-decoration: none;
+}
+
+.drinks th{
+    text-align: left;
+    padding-left: 20px;
+    background-color: #aaa;
+}
+
+.drinks td{
+    text-align: left;
+    padding-left: 20px;
 }
