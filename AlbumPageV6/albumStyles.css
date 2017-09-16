@@ -17,5 +17,8 @@ a:hover {
 
 tbody   {
     font-style: italic;
+}
+
+tbody tr:nth-of-type(odd){
     background-color: ivory;
 }
