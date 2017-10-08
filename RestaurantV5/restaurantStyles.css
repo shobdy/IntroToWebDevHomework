@@ -1,30 +1,15 @@
 /* This stylesheet holds the styles for th header and footer only, per the directions on Restaurant V2 */
 
-header h1, footer  {
-    text-align: center;
-}
-
-nav{
-    padding: 10px 0px;
-}
-
-nav a {
-    padding: 20px;
-}
-
 h1  {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .menu tr th  {
     font-size: 1.5em;
+    text-align: center;
 }
 .menu   {
     background-color: #ddd;
-}
-
-#home   {
-    background-color: #ffa;
 }
 
 #nameLabel, #emailLabel, #reasonLabel   {
@@ -49,7 +34,15 @@ a:active    {
     background-color: #aaa;
 }
 
-.drinks td{
-    text-align: left;
-    padding-left: 20px;
+.drinks {
+    background-color: #aaa
+}
+
+.bg-primary {
+    background-color: #ffa !important;
+    color: black;
+}
+
+nav li  {
+    padding-left: 2em;
 }

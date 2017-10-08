@@ -25,68 +25,76 @@
                text-align:right;
            }
         </style>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="bootstrap/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <header>
+        <header class="text-center">
             <h1>Joe's Diner</h1>
             <hr>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact_us.html">Contact Us</a>
+                <div class="container">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link fa fa-home" href="index.html"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
             </nav>
             <hr>
         </header>
             <main>
-              <form action="#" method="post">
-                  <table>
-                      <tr>
-                          <td class="alignRight"><label id="nameLabel" for="name">Name:</label></td>
-                          <td><input id="name" name="name" type="text" /></td>
-                      </tr>
-                      <tr>
-                          <td class="alignRight"><label id="emailLabel" for="email">Email:</label></td>
-                          <td><input id="email" name="email" type="text" /></td>
-                      </tr>
-                      <tr>
-                          <td class="alignRight"><label id="phoneLabel" for="phone">Phone:</label></td>
-                          <td><input id="phone" name="phone" type="text" /></td>
-                      </tr>
-                      <tr>
-                          <td class="alignRight"><label id="reasonLabel" for="reason">Reason for Inquiry:</label></td>
-                          <td><select id="reason" name="reason">
+                <div class="container">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <label class="col-4 text-right" id="nameLabel" for="name">Name:</label>
+                            <input class="col-4" id="name" name="name" type="text" />
+                        </div>              
+                        <div class="row">
+                            <label class="col-4 text-right" id="emailLabel" for="email">Email:</label>
+                            <input class="col-4" id="email" name="email" type="text" />
+                        </div>
+                        <div class="row">
+                            <label class="col-4 text-right" id="phoneLabel" for="phone">Phone:</label>
+                            <input class="col-4" id="phone" name="phone" type="text" />
+                        </div>
+                        <div class="row">
+                            <label class="col-4 text-right" id="reasonLabel" for="reason">Reason for Inquiry:</label>
+                            <select class="col-4" id="reason" name="reason">
                                 <option value="catering" checked>Catering</option>
                                 <option value="privateParty">Private Party</option>
                                 <option value="feedback">Feedback</option>
                                 <option value="other">Other</option>
                               </select>
-                      </tr>
-                      <tr>
-                          <td class="alignRight" style="vertical-align: top;"><label id="additionalInfoLabel" for="additionalInfo">Additional Information:</label></td>
-                          <td><textarea id="additionalInfo" name="additionalInfo"></textarea></td>
-                      </tr>
-                      <tr>
-                          <td class="alignRight"><label id="visitBeforeLabel" for="visitBefore">Have you been to the restaurant?</label></td>
-                          <td><input name="visitBefore" value="No" type="radio" checked/>No <input name="visitBefore" value="Yes" type="radio" />Yes</td>
-                      </tr>
-                      <tr>
-                          <td class="alignRight"><label id="bestTimeToContactLabel" for="bestTimeToContact">Best days to contact you:</label></td>
-                          <td id="bestTimeToContact"><input name="bestTimeToContact" type="checkbox" value="Monday">M
-                            <input name="bestTimeToContact" type="checkbox" value="Tuesday">T
-                            <input name="bestTimeToContact" type="checkbox" value="Wednesday">W
-                            <input name="bestTimeToContact" type="checkbox" value="Thursday">Th
-                            <input name="bestTimeToContact" type="checkbox" value="Friday">F</td>
-                      </tr>
-                      <tr>
-                          <td></td>
-                          <td class="alignRight"><input id="SendRequest" name="SendRequest" type="submit" value="Send Request" /></td>
-                      </tr>
-                  </table>
-              </form>
+                        </div>
+                        <div class="row">
+                            <label class="col-4 text-right" id="additionalInfoLabel" for="additionalInfo">Additional Information:</label>
+                            <textarea class="col-4" id="additionalInfo" name="additionalInfo"></textarea>
+                        </div>
+                        <div class="row">
+                            <label class="col-4 text-right" id="visitBeforeLabel" for="visitBefore">Have you been to the restaurant?</label>
+                            <span class="col-2">
+                                <input name="visitBefore" value="No" type="radio" checked/>No
+                                <input class="ml-4" name="visitBefore" value="Yes" type="radio" />Yes
+                            </span>
+                        </div>
+                        <div class="row">
+                            <label class="col-4 text-right" id="bestTimeToContactLabel" for="bestTimeToContact">Best days to contact you:</label>
+                            <span><input name="bestTimeToContact" type="checkbox" value="Monday">M</span>
+                            <span><input class="ml-4" name="bestTimeToContact" type="checkbox" value="Tuesday">T</span>
+                            <span><input class="ml-4" name="bestTimeToContact" type="checkbox" value="Wednesday">W</span>
+                            <span><input class="ml-4" name="bestTimeToContact" type="checkbox" value="Thursday">Th</span>
+                            <span><input class="ml-4" name="bestTimeToContact" type="checkbox" value="Friday">F</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <input class="col-2" id="SendRequest" name="SendRequest" type="submit" value="Send Request" />
+                        </div>
+                    </form>
             </main>
             <hr>
-            <footer>
+            <footer class="text-center">
                 <address>123 Main St., Beaver Dam, KY 42320</address>
                 <p>270-555-1234</p>
             </footer>

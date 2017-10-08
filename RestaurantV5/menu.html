@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home Page</title>
+        <title>Menu</title>
         <style>
             table   {
                 width: 900px;
@@ -15,119 +15,109 @@
                 font-size: 1.2em;
             }
         </style>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="bootstrap/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <header>
+        <header class="text-center">
             <h1>Joe's Diner</h1>
             <hr>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact_us.html">Contact Us</a>
+                <div class="container">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link fa fa-home" href="index.html"></a></li>
+                        <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
             </nav>
             <hr>
         </header>
             <main>
-               <table class="menu">
-                   <tr>
-                       <th>
-                           Burgers and Fries
-                       </th>
-                       <th>
-                            Hot Dogs and Chips
-                       </th>
-                       <th>
-                            Italian Sausage and Peppers
-                       </th>
-                   </tr>
-                   <tr>
-                        <td>
-                           <p>An American Classic!<br />
-                            Your choice - with or without cheese<br />
-                            Pickle, onion, tomato, and lettuce<br />
-                            Served with our famous thick cut french fries<br />
-                            $7.95
-                           </p>
-                       </td>
-                       <td>
-                           <p>A Summer Classic!<br />
-                            Your choice - white or wheat bun<br />
-                            Relish, mustard, and ketchup<br />
-                            Served with our house-made chips<br />
-                            $7.95</p>
-                       </td>
-                       <td>
-                           <p>An All-Time Favorite!<br />
-                            Your choice - mild or spicy<br />
-                            Cole slaw<br />
-                            Served with garlic mashers<br />
-                            $10.95</p>
-                       </td>
-                   </tr>
-                   <tr>
-                       <th>
-                            Tenderloin Sandwich and Chips
-                       </th>
-                       <th>
-                            House Salad
-                       </th>
-                       <th>
-                            Brisket Sandwich and Fries
-                       </th>
-                   </tr>
-                   <tr>
-                       <td>
-                           <p>Really Hits the Spot!<br />
-                            Plain or Sesame Seed Bun<br />
-                            Pickle, onion, tomato, and lettuce<br />
-                            Served with our house-made chips<br />
-                            $8.95</p>
-                       </td>
-                       <td>
-                           <p>On the Lighter Side<br />
-                            Your choice - with or without cheese<br />
-                            Iceberg lettuce, tomatos, peppers<br />
-                            Thousand Island or Ranch Dressing<br />
-                            Served with a dinner roll<br />
-                            $6.95</p>
-                       </td>
-                       <td>
-                           <p>A Taste of Texas!<br />
-                            Smoked brisket on thick cut Texas Toast<br />
-                            Cole Slaw<br />
-                            Served with our famous thick-cut french fries<br />
-                            $7.95</p>
-                       </td>
-                   </tr>
-                   <table class="menu drinks">
-                       <thead>
-                            <th colspan="2">Beverages</th>
-                       </thead>
-                       <tbody>
-                           <tr>
-                               <td>Root Beer</td>
-                               <td>$3.00</td>
-                           </tr>
-                           <tr>
-                               <td>Bottled Water</td>
-                               <td>$1.25</td>
-                           </tr>
-                           <tr>
-                               <td>Lemonade</td>
-                               <td>$1.00</td>
-                           </tr>
-                           <tr>
-                               <td>Iced Tea</td>
-                               <td>$1.25</td>
-                           </tr>
-                       </tbody>
-                   </table>
-                       
-               </table>
+                <div class="container menu py-2">
+                    <div class="row px-3 text-center">
+                        <div class="col-sm-12 col-md-4 mb-4">
+                            <h5>Burgers and Fries</h5>
+                            <span>An American Classic!<br />
+                                Your choice - with or without cheese<br />
+                                Pickle, onion, tomato, and lettuce<br />
+                                Served with our famous thick cut french fries<br />
+                                $7.95
+                            </span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 mb-4"> 
+                            <h5>Hot Dogs and Chips</h5>
+                            <span>A Summer Classic!<br />
+                                Your choice - white or wheat bun<br />
+                                Relish, mustard, and ketchup<br />
+                                Served with our house-made chips<br />
+                                $7.95
+                            </span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 mb-4">
+                            <h5>Italian Sausage and Peppers</h5>
+                            <span>An All-Time Favorite!<br />
+                                Your choice - mild or spicy<br />
+                                Cole slaw<br />
+                                Served with garlic mashers<br />
+                                $10.95
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row px-3 text-center">
+                        <div class="col-sm-12 col-md-4 mb-4 mb-md-1">
+                            <h5>Tenderloin Sandwich and Chips</h5>
+                            <span>Really Hits the Spot!<br />
+                                Plain or Sesame Seed Bun<br />
+                                Pickle, onion, tomato, and lettuce<br />
+                                Served with our house-made chips<br />
+                                $8.95
+                            </span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 mb-4 mb-md-1">
+                            <h5>House Salad</h5>
+                            <span>On the Lighter Side<br />
+                                Your choice - with or without cheese<br />
+                                Iceberg lettuce, tomatos, peppers<br />
+                                Thousand Island or Ranch Dressing<br />
+                                Served with a dinner roll<br />
+                                $6.95
+                            </span>
+                        </div>
+                        <div class="col-sm-12 col-md-4 mb-4 mb-md-1">
+                            <h5>Sandwich and Fries</h5
+                            <span>A Taste of Texas!<br />
+                                Smoked brisket on thick cut Texas Toast<br />
+                                Cole Slaw<br />
+                                Served with our famous thick-cut french fries<br />
+                                $7.95
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <h4 class="col-12 drinks py-1">Beverages</h4>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-6">Root Beer</div>
+                        <div class="col-sm-12 col-md-6 pb-3 pb-md-0">$3.00</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-6">Bottled Water</div>
+                        <div class="col-sm-12 col-md-6 pb-3 pb-md-0">$1.25</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-6">Lemonade</div>
+                        <div class="col-sm-12 col-md-6 pb-3 pb-md-0">$1.00</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-6">Iced Tea</div>
+                        <div class="col-sm-12 col-md-6">$1.25</div>
+                    </div>
+                </div>
             </main>
             <hr>
-            <footer>
+            <footer class="text-center">
                 <address>123 Main St., Beaver Dam, KY 42320</address>
                 <p>270-555-1234</p>
             </footer>

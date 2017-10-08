@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Home Page</title>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="bootstrap/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <header>
+        <header class="text-center">
+            <div class="container">
+                <div class="jumbotron mt-3">
+                    <h1>BIG NEWS!!!!!</h1>
+                    <H2>We are opening a new location across town!</H2>
+                    <h2>Come join us for our grand opening October 31!!</h2>
+                </div>
+            </div>
             <h1>Joe's Diner</h1>
             <hr>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact_us.html">Contact Us</a>
+                <div class="container">
+                    <div class="row">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a class="nav-link active fa fa-home"  href="index.html"></a></li>
+                            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <hr>
         </header>
             <main id="home">
-                <div style="text-align:center;"><img src="images/joes_diner.jpg" alt="Joe's Diner Picture" /></div><br />
-                <div style="width: 400px; margin:auto; ">
-                    <p>Joe's Diner is a family owned restaurant that has been in business since 1942. It serves fast food with special flavors.
-                        We only use the freshest ingredients and serve the most flavorful food you will have this side of the Mississippi!
-                        Please come join our casual atmosphere for the best burgers and milkshakes you will have the pleasure to experience.</p>
+                <div class="container bg-primary">
+                    <div class="row">
+                        <div class="col-12 text-center py-3">
+                            <img src="images/joes_diner.jpg" alt="Joe's Diner Picture" />
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-0 col-md-3"></div>
+                        <div class="col-sm-12 col-md-6">
+                            <p>Joe's Diner is a family owned restaurant that has been in business since 1942. It serves fast food with special flavors.
+                                We only use the freshest ingredients and serve the most flavorful food you will have this side of the Mississippi!
+                                Please come join our casual atmosphere for the best burgers and milkshakes you will have the pleasure to experience.</p>
+                        </div>
+                    </div>
+                </div>
             </main>
             <hr>
-            <footer>
+            <footer class="text-center">
                 <address>123 Main St., Beaver Dam, KY 42320</address>
                 <p>270-555-1234</p>
             </footer>
