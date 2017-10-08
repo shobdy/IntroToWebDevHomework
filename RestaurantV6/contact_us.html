@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <style>
+            table   {
+                width: 425px;
+                margin-left: 400px; 
+            }
+           #additionalInfo  {
+               width: 200px;
+               height: 100px;
+           }
+           #name, #email, #phone   {
+               width: 200px;
+           }
+           #reason  {
+               width: 205px;
+           }
+           #bestTimeToContact input  {
+               margin-right: 8px;
+           }
+
+           .alignRight  {
+               text-align:right;
+           }
+        </style>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="bootstrap/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header class="text-center">
+            <h1>Joe's Diner</h1>
+            <hr>
+            <nav>
+                <div class="container">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link fa fa-home" href="index.html"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <hr>
+        </header>
+            <main>
+                <div class="container">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <label class="col-4 text-right" id="nameLabel" for="name">Name:</label>
+                            <input class="col-4" id="name" name="name" type="text" />
+                        </div>              
+                        <div class="row">
+                            <label class="col-4 text-right" id="emailLabel" for="email">Email:</label>
+                            <input class="col-4" id="email" name="email" type="text" />
+                        </div>
+                        <div class="row">
+                            <label class="col-4 text-right" id="phoneLabel" for="phone">Phone:</label>
+                            <input class="col-4" id="phone" name="phone" type="text" />
+                        </div>
+                        <div class="row">
+                            <label class="col-4 text-right" id="reasonLabel" for="reason">Reason for Inquiry:</label>
+                            <select class="col-4" id="reason" name="reason">
+                                <option value="catering" checked>Catering</option>
+                                <option value="privateParty">Private Party</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                              </select>
+                        </div>
+                        <div class="row">
+                            <label class="col-4 text-right" id="additionalInfoLabel" for="additionalInfo">Additional Information:</label>
+                            <textarea class="col-4" id="additionalInfo" name="additionalInfo"></textarea>
+                        </div>
+                        <div class="row">
+                            <label class="col-4 text-right" id="visitBeforeLabel" for="visitBefore">Have you been to the restaurant?</label>
+                            <span class="col-2">
+                                <input name="visitBefore" value="No" type="radio" checked/>No
+                                <input class="ml-4" name="visitBefore" value="Yes" type="radio" />Yes
+                            </span>
+                        </div>
+                        <div class="row">
+                            <label class="col-4 text-right" id="bestTimeToContactLabel" for="bestTimeToContact">Best days to contact you:</label>
+                            <span><input name="bestTimeToContact" type="checkbox" value="Monday">M</span>
+                            <span><input class="ml-4" name="bestTimeToContact" type="checkbox" value="Tuesday">T</span>
+                            <span><input class="ml-4" name="bestTimeToContact" type="checkbox" value="Wednesday">W</span>
+                            <span><input class="ml-4" name="bestTimeToContact" type="checkbox" value="Thursday">Th</span>
+                            <span><input class="ml-4" name="bestTimeToContact" type="checkbox" value="Friday">F</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <input class="col-2" id="SendRequest" name="SendRequest" type="submit" value="Send Request" />
+                        </div>
+                    </form>
+            </main>
+            <hr>
+            <footer class="text-center">
+                <address>123 Main St., Beaver Dam, KY 42320</address>
+                <p>270-555-1234</p>
+            </footer>
+    </body>
+</html>

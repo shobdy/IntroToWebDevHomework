@@ -1,0 +1,48 @@
+/* This stylesheet holds the styles for th header and footer only, per the directions on Restaurant V2 */
+
+h1  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu tr th  {
+    font-size: 1.5em;
+    text-align: center;
+}
+.menu   {
+    background-color: #ddd;
+}
+
+#nameLabel, #emailLabel, #reasonLabel   {
+    font-weight: bold;
+}
+
+a:visited   {
+    color: green;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active    {
+    text-decoration: none;
+}
+
+.drinks th{
+    text-align: left;
+    padding-left: 20px;
+    background-color: #aaa;
+}
+
+.drinks {
+    background-color: #aaa
+}
+
+.bg-primary {
+    background-color: #ffa !important;
+    color: black;
+}
+
+nav li  {
+    padding-left: 2em;
+}
